@@ -1,0 +1,6 @@
+h1 Styles!
+ul =render @styles
+- new_style=Style.new
+=simple_form_for new_style do |f| 
+  =f.input :name, placeholder: 'new style name..', label: false
+  =f.submit 'Add'
