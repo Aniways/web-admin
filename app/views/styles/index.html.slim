@@ -1,8 +1,10 @@
 .styles-page
-  .page-header 
-    h1 STYLES  
+  .page-header
+    h1 STYLES
   .list-group =render @styles
-  - new_style=Style.new
-  = simple_form_for(new_style,  html: {class: 'form-inline' }) do |f|
-    = f.input :name, placeholder: 'new style name..',  label: false,  input_html: {class: 'input-wide' }
-    = f.submit "add", class: 'btn btn-primary btn-float-right'
+  = simple_form_for Style.new do |f|
+    .row
+      .col-md-9.col-xs-12
+        = f.input_field :name, placeholder: 'new style name..',  label: false, class: 'form-control margin-top'
+      .col-md-3.col-xs-12
+        = f.submit "add", class: 'btn btn-primary btn-block margin-top'
