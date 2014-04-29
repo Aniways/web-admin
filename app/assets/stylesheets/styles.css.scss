@@ -1,17 +1,13 @@
 .styles-page {
-	width: 50%;
-	margin:auto;
-	input.btn-float-right {
-		float: right;
-		//width: 12%;
-	}
-	input.input-wide {
-		//width: 278%
-	}
-	a.list-group-item {
-		&:hover {
-			background-color: rgba(48, 113, 169, 0.25)
-		}
-	}
-}
+  margin:auto;
 
+  .margin-top {
+    margin-top:10px;
+  }
+
+  a.list-group-item {
+    &:hover {
+      background-color: rgba(48, 113, 169, 0.25)
+    }
+  }
+}
