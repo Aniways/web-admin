@@ -21,9 +21,18 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 gem 'slim'
-gem 'simple_form'
+gem 'simple_form', github: 'plataformatec/simple_form', tag:'v3.1.0.rc1'
 gem 'bootstrap-sass'
-gem 'jazz_hands'
+
+
+group :development, :test do
+  gem 'rspec-rails', '2.13.1'
+  gem 'shoulda-matchers'
+  gem 'jazz_hands'
+  gem 'minitest'
+  gem 'factory_girl_rails'
+end
+
 
 
 # bundle exec rake doc:rails generates the API under doc/api.

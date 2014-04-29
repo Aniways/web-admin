@@ -6,7 +6,7 @@ class StylesController < ApplicationController
   def create
     style = Style.new(style_params)
     if style.save
-      flash[:success] = "Welcome to the Sample App!"
+      flash[:success] = "#{style_params['name']} created"
     else
       flash[:danger] = "Bad designer! #{style.errors.full_messages.to_sentence}" 	
     end	

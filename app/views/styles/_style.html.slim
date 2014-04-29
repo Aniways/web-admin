@@ -1,1 +1,3 @@
-li =link_to style.name, style_packs_path(style)
+=link_to style_packs_path(style), :class => "list-group-item" do
+  | #{style.name} 
+  span.badge.badge-important #{style.packs.length}

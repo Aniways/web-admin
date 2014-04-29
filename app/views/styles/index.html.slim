@@ -1,6 +1,8 @@
-h1 Styles!
-ul =render @styles
-- new_style=Style.new
-=simple_form_for new_style do |f| 
-  =f.input :name, placeholder: 'new style name..', label: false
-  =f.submit 'Add'
+.styles-page
+  .page-header 
+    h1 STYLES  
+  .list-group =render @styles
+  - new_style=Style.new
+  = simple_form_for(new_style,  html: {class: 'form-inline' }) do |f|
+    = f.input :name, placeholder: 'new style name..',  label: false,  input_html: {class: 'input-wide' }
+    = f.submit "add", class: 'btn btn-primary btn-float-right'
