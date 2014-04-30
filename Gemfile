@@ -27,6 +27,7 @@ gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
+  gem 'capybara'
   gem 'shoulda-matchers'
   gem 'jazz_hands'
   gem 'minitest'

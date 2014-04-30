@@ -3,7 +3,6 @@ require 'spec_helper'
 describe Style do
 
   before do
-    #style_name = "old_style"
     @style = create(:style)
   end
 
