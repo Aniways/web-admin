@@ -1,3 +1,4 @@
 .col-xs-6.col-md-3
   a.thumbnail href="#"
-    img alt="..." data-src="holder.js/100%x180"
+     = ('<img src="data:image/png;base64,%s">' % Base64.encode64(pack.icons.first.asset_ldpi)).html_safe
+     h5 =pack.name  
