@@ -1,3 +1,22 @@
-// Place all the styles related to the packs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.packs-page {
+  i {
+  	top: 8px;
+  	margin-right: 8px;
+  }
+  ul {
+  	list-style-type: none;
+  	li {
+        width: 200px;
+        height: 200px;
+        //border: 1px solid #000;
+        display: -moz-inline-stack;
+        display: inline-block;
+        img {
+        	width: 100%;
+        	height: 100%;
+        }
+
+    }
+  }
+}
+
