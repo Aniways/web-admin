@@ -2,13 +2,12 @@ Style.delete_all
 Pack.delete_all
 
 4.times do |index|
-	style = Style.create(name: "s_#{index}")
-	style.packs.create(name:"p_#{index}")
-	style.packs.create(name:"p_#{index}_2")
-	style.packs.create(name:"p_#{index}_3")
-	style.packs.create(name:"p_#{index}_4")
-	style.packs.create(name:"p_#{index}_5")
-	style.packs.create(name:"p_#{index}_6")
-	style.packs.create(name:"p_#{index}_7")
-	style.packs.create(name:"p_#{index}_8")
+  style = Style.create(name: "s_#{index}")
+  (1..8).to_a.sample.times do |pack_index|
+    pack = style.packs.build(name:"p_#{index}_#{pack_index}")
+    (1..10).to_a.sample.times do |icon_index|
+      pack.icons.build(name: "i_#{pack_index}_#{icon_index}")
+    end
+  end
+  style.save
 end
