@@ -15,6 +15,6 @@ describe Pack do
   it {should have_many(:icons)}
   it {should validate_presence_of :icons}
   
-  it {should validate_presence_of :style_id}
+  it {should validate_presence_of :style}
   it {should belong_to(:style)}
 end

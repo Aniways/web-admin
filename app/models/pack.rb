@@ -1,7 +1,10 @@
 class Pack < ActiveRecord::Base
-	validates :name, uniqueness: true, presence: true
-	has_many :icons
-	validates :icons, presence: true
-	belongs_to :style
-	validates :style_id, presence: true
+
+  has_many :icons
+  belongs_to :style
+
+  validates :name, uniqueness: true, presence: true
+  validates_presence_of :icons
+  validates_presence_of :style
+
 end
