@@ -1,17 +1,15 @@
 .packs-page
   .page-header
-    h1 
+    h1
       = link_to styles_path do
-  	    i.glyphicon.glyphicon-circle-arrow-left
-	  =@style_name
-	  span  style
-  ul 
-  	=render @packs
-    li
-      .row
-        .col-xs-6.col-md-3
-	      a.thumbnail href=new_style_pack_path(params['style_id']) 
-	        i.glyphicon.glyphicon-plus-sign
+       i.glyphicon.glyphicon-circle-arrow-left
+      =@style_name
+      span  style
+  .row
+    =render @packs
+    .col-xs-6.col-md-3.plus-sign
+      a href=new_style_pack_path(params['style_id'])
+        i.glyphicon.glyphicon-plus-sign
 
 / ul =render @packs
 / = link_to 'add pack!', 
