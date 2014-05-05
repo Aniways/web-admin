@@ -1,5 +1,6 @@
 FactoryGirl.define do
   factory :style do
+    category 'Feelings'
     sequence(:name) {|n| "style_#{n}" }
   end
 
@@ -11,7 +12,7 @@ FactoryGirl.define do
   factory :pack do
     sequence(:name) {|n| "pack_#{n}" }
     style
-    
+
     ignore do
       icons_count 5
     end
