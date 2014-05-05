@@ -1,0 +1,2 @@
+      invoke  active_record
+      create    db/migrate/20140504113845_add_category_to_styles.rb
