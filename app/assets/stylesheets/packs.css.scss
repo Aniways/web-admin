@@ -6,12 +6,23 @@
 
   .plus-sign {
     text-align: center;
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .thumbnail{
     margin: 5px;
     text-decoration: None;
     text-align: center;
+  }
+
+  .glyphicon-plus-sign {
+    margin: 37px;
+  }
+  .gridster ul {
+    list-style: none;
+    .preview-holder {
+      border: none!important;
+      background: #428BCA!important;
+    }
   }
 }

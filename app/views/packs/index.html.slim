@@ -5,11 +5,8 @@
        i.glyphicon.glyphicon-circle-arrow-left
       =@style_name
       span  style
-  .row
-    =render @packs
-    .col-xs-6.col-md-3.plus-sign
-      a href=new_style_pack_path(params['style_id'])
-        i.glyphicon.glyphicon-plus-sign
-
-/ ul =render @packs
-/ = link_to 'add pack!', 
+  .gridster
+    ul
+      =render @packs  
+  a.thumbnail.plus-sign href=new_style_pack_path(params['style_id'])
+    i.glyphicon.glyphicon-plus-sign

@@ -4,6 +4,7 @@ class Pack < ActiveRecord::Base
   belongs_to :style
 
   validates :name, uniqueness: true, presence: true
+
   validates_presence_of :icons
   validates_presence_of :style
 
