@@ -6,6 +6,7 @@ FactoryGirl.define do
 
   factory :icon do
     sequence(:name) {|n| "icon_#{n}" }
+    asset_ldpi ''
     pack
   end
 
