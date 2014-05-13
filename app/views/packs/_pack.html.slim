@@ -1,4 +1,4 @@
-li data={row:"1" ,col:"1" ,sizex:"1" ,sizey:"1", name: pack.name}
+li data=pack.order_in_style
   a.thumbnail href="#"
     = ('<img src="data:image/png;base64,%s">' % Base64.encode64(pack.icons.first.asset_ldpi)).html_safe
     h5 =pack.name

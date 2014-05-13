@@ -32,3 +32,29 @@
   	background-color: #6A4A3C;
   }
 }
+
+//styles show
+.packs-page {
+  .glyphicon {
+    top: 8px;
+    margin-right: 8px;
+  }
+
+  .glyphicon-plus-sign {
+    float: right;
+  }
+
+  .thumbnail{
+    margin: 5px;
+    text-decoration: None;
+    text-align: center;
+  }
+
+  .gridster ul {
+    list-style: none;
+    .preview-holder {
+      border: none!important;
+      background: #428BCA!important;
+    }
+  }
+}
