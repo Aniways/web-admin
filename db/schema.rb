@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140428151224) do
+ActiveRecord::Schema.define(version: 20140504113845) do
 
   create_table "icons", force: true do |t|
     t.string  "name"
@@ -36,7 +36,6 @@ ActiveRecord::Schema.define(version: 20140428151224) do
     t.binary  "is_default"
     t.integer "index_in_pack_default"
     t.binary  "is_new"
-    t.string  "category"
   end
 
   create_table "packs", force: true do |t|
@@ -50,6 +49,7 @@ ActiveRecord::Schema.define(version: 20140428151224) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "category",   null: false
   end
 
   add_index "styles", ["name"], name: "index_styles_on_name", unique: true, using: :btree

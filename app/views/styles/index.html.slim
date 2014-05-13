@@ -4,7 +4,10 @@
   .list-group =render @styles
   = simple_form_for Style.new do |f|
     .row
-      .col-md-9.col-xs-12
+      .col-md-6.col-xs-12
         = f.input_field :name, placeholder: 'new style name..',  label: false, class: 'form-control margin-top'
+      .col-md-3.col-xs-12
+        = f.input :category, label: false do
+          = f.select :category, Style.categories.map { |c| [c.first.underscore.humanize, c.first, { class: "#{c.first}-option" }]}, {include_blank: 'select category..'}, {class: 'form-control margin-top'}
       .col-md-3.col-xs-12
         = f.submit "add", class: 'btn btn-primary btn-block margin-top'
